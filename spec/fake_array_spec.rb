@@ -27,6 +27,11 @@ describe 'fake array' do
       expect(fake_array.first).to eq(1)
     end
 
+    it "should return the last element" do
+      fake_array = FakeArray.new(4,5,6)
+      expect(fake_array.last).to eq(6)
+    end
+
   end
 
 end
